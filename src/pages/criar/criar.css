@@ -1,0 +1,130 @@
+/* Estilos gerais do corpo da página */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container do formulário */
+.container {
+    max-width: 800px;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título do formulário */
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #343a40;
+    margin-bottom: 30px;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo para os campos do formulário */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Estilo para os labels */
+label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #495057;
+}
+
+/* Estilo para os inputs */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+textarea,
+select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Estilo para o textarea */
+textarea {
+    resize: vertical;
+}
+
+/* Foco nos inputs e select */
+input:focus, textarea:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Estilo para o botão */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Desabilitar o botão de submit quando estiver carregando */
+button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+/* Estilos para as mensagens de erro e sucesso */
+.alert {
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+/* Ajustes responsivos para dispositivos móveis */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 20px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        padding: 10px 15px;
+    }
+}
+.centro{
+    display: flex;
+    justify-content: center;
+}
